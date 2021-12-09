@@ -18,7 +18,23 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--separate">Vào cửa hàng trên ứng Shopee</li>
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng Shopee
+
+                            <!-- Header Qr code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/QRcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/google.png" alt="Google play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/appstore.png" alt="App store" class="header__qr-download-img">
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                        </li>
                         <li class="header__navbar-item">
                             <span class="header__navbar-title--no-pointer">Kết nối</span>
                             <a href="" class="header__navbar-icon-link">
@@ -31,11 +47,48 @@
                     </ul>
     
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fas fa-bell"></i>
                                 Thông báo
                             </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://anphat.com.vn/media/product/29359_e_dra_ek387.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Bàn phím cơ Edra EK387 Switch Huano - Grown Switch</span>
+                                                <span class="header__notify-description">Giảm giá sốc chỉ còn 600k, mua ngay đi anh bạn!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://anphat.com.vn/media/product/33741_dareu_eh416_rgb.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tai nghe DareU EH416 led RGB</span>
+                                                <span class="header__notify-description">Giả lập âm thanh 7.1, led RGB cực kì đẹp mắt!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://hc.com.vn/i/ecommerce/media/GS.007573_FEATURE_80330.jpg" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tai nghe JBL chụp tai Gaming Quantum 400 Black</span>
+                                                <span class="header__notify-description">Chất lượng âm thanh phải gọi là chất đến từng âm sắc, giá chỉ còn 2.190.000đ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
@@ -57,6 +110,16 @@
         <footer class="footer">
 
         </footer>
+    </div>
+
+    <!-- Modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Form login/register -->
+            </div>
+        </div>
     </div>
 </body>
 </html>
