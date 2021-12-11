@@ -96,8 +96,12 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li class="header__navbar-item header__navbar-user">                            
+                            <img src="https://yt3.ggpht.com/yti/APfAmoFlpxS1ZV6uCo4Rm6TRbHQ__K8ivV966qn6jeD04A=s88-c-k-c0x00ffffff-no-rj-mo" alt="" class="header__navbar-user-avt">
+                            <span class="header__navbar-user-name">Cao Lê Thuần</span>
+                        </li>
                     </ul>
                 </nav>
 
@@ -112,7 +116,22 @@
                     </div>
 
                     <div class="header__search">
-                        <input type="txt" class="header__search-input" placeholder="Tìm kiếm sản phầm">
+                        <div class="header__search-input-wrap">
+                            <input type="txt" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            
+                            <!-- Search history -->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Tai nghe DareU EH416</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Tai nghe Ajazz ax365</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fas fa-angle-down"></i>
@@ -133,8 +152,87 @@
                         </button>
                     </div>
 
+                    <!-- Cart -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            
+                            <!-- Empty cart: header__cart-list--empty-cart-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/empty-cart.png" alt="" class="header__cart-empty-cart-img">
+                                <span class="header__cart-list-empty-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- Cart items -->
+                                    <li class="header__cart-item">
+                                        <img src="https://anphat.com.vn/media/product/33741_dareu_eh416_rgb.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tai nghe DareU EH416</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">380.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Led RGB
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="header__cart-item">
+                                        <img src="https://anphat.com.vn/media/product/29359_e_dra_ek387.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bàn phím cơ Edra EK387</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">760.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Grown Switch
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/329/122/products/ban-phim-co-tkl-akko-3087v2-ds-ocean-star.png?v=1634181464770" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bàn phím cơ TKL AKKO 3087v2 DS Ocean Star</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.390.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Orange v2 Switch
+                                                </span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
